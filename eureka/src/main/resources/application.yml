@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: peer3
+
+eureka:
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 1000
+    response-cache-update-interval-ms: 3000
+#    response-cache-auto-expiration-in-seconds: 180
+  instance:
+    prefer-ip-address: false
+
+logging:
+  level:
+    root: warn
